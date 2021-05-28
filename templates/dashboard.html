@@ -1,0 +1,140 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Prediction Dashboard</title>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+}
+
+.lead {
+  font-size: 2.5rem;
+}
+
+.navbar1 {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+}
+
+.navbar1 ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar1 ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar1 ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar1 ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+/* Section Images */
+/*section#home {
+  background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;;
+}
+
+section#about {
+  background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;;
+}
+
+section#service {
+  background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;
+}
+
+section#contact {
+  background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;;
+}
+*/
+
+</style>
+<body>
+  <div class="container1">
+  <nav class="navbar1">
+      <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#prediction1">Breast Cancer Prediction</a></li>
+          <li><a href="#prediction2">Heart Disease Prediction</a></li>
+          <li><a href="#prediction3">Liver Disease Prediction</a></li>
+        </ul>
+      </nav>
+  <section id="home">
+    <h1>Disease Prediction and Analysis Dashboard</h1>
+    <p class="lead">A disease is an unnatural medical condition that negatively affects the functional state of an organism and is generally associated with certain signs of illness. As reported by World Health Organization (WHO),some of the diseases are the world’s biggest killers and have remained the leading causes of death globally in the last 15 years. In the direction of predicting those disease, Machine Learning can present remarkable features that simplify the identification of unseen patterns, eventually providing clinical insights that assist physicians in planning and providing care.</p>
+  </section>
+  <section id="prediction1">
+      <h1>Breast Cancer Prediction</h1>
+      <p class="lead">Breast cancer is one of the most common cancers among women worldwide, representing the majority of new cancer cases and cancer-related deaths according to global statistics, making it a significant public health problem in today’s society.The early diagnosis of BC can improve the prognosis and chance of survival significantly, as it can promote timely clinical treatment to patients.Further accurate classification of benign tumors can prevent patients from unnecessary treatments.</p>
+      <br>
+      <a class="btn btn-primary btn-lg " href="https://breastcancerprediction-py.herokuapp.com/">Check Prediction</a>
+  </section>
+  <section id="prediction2">
+      <h1>Heart Disease Prediction</h1>
+      <p class="lead">Heart disease describes a range of conditions that affect your heart.A buildup of fatty plaques in your arteries, or atherosclerosis (ath-ur-o-skluh-ROE-sis) can damage your blood vessels and heart. Plaque buildup causes narrowed or blocked blood vessels that can lead to a heart attack, chest pain (angina) or stroke.Coronary artery disease symptoms may be different for men and women. For instance, men are more likely to have chest pain. Women are more likely to have other signs and symptoms along with chest discomfort, such as shortness of breath, nausea and extreme fatigue.</p>
+      <br>
+      <a class="btn btn-primary btn-lg " href="https://disease-prediction-application.herokuapp.com/">Check Prediction</a>
+  </section>
+  <section id="prediction3">
+      <h1>Liver Disease Prediction</h1>
+      <p class="lead">Liver is the largest and one of the most significant  organ that helps your body digest food, store energy, and remove poisons. Nowadays Liver diseases are increasing at high rate.Many people with liver disease do not look or feel sick even though damage is happening to their liver. At a certain point in the progression of liver disease, damage can become irreversible and lead to liver failure, liver cancer, or death.Hence Early Diagnosis of Liver Disease is Very Important.</p>
+      <br>
+      <a class="btn btn-primary btn-lg " href="https://liver-disease.herokuapp.com/">Check Prediction</a>
+  </section>
+</div>
+</body>
+</html>
